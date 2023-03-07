@@ -1,0 +1,65 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Contact
+{% endblock %}
+
+{% block stylesheets %}
+	<link rel="stylesheet" href="{{ asset('assets/css/contact.css') }}">
+{% endblock %}
+
+
+{% block body %}
+
+<div class="slide"></div>
+<section class="main">
+	<div class="container">
+		<div class="title">
+			<h1>Nous trouver</h1>
+		</div>
+		<div class="container_infos">
+			<div class="left">
+				<div class="position">
+					<svg xmlns="http://www.w3.org/2000/svg" class="st0" viewbox="0 0 24 24" width="42" height="42">
+						<path fill="none" d="M0 0h24v24H0z"/>
+						<path d="M12 20.9l4.95-4.95a7 7 0 1 0-9.9 0L12 20.9zm0 2.828l-6.364-6.364a9 9 0 1 1 12.728 0L12 23.728zM12 13a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 2a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/>
+					</svg>
+					<div class="postion_info">
+						<h3>Adresse</h3>
+						<p>3 rue chanzy
+							<br>45000
+							<br>
+							Orléans</p>
+					</div>
+				</div>
+				<div class="phone">
+					<svg xmlns="http://www.w3.org/2000/svg" class="st0" viewbox="0 0 24 24" width="42" height="42">
+						<path fill="none" d="M0 0h24v24H0z"/>
+						<path d="M21 16.42v3.536a1 1 0 0 1-.93.998c-.437.03-.794.046-1.07.046-8.837 0-16-7.163-16-16 0-.276.015-.633.046-1.07A1 1 0 0 1 4.044 3H7.58a.5.5 0 0 1 .498.45c.023.23.044.413.064.552A13.901 13.901 0 0 0 9.35 8.003c.095.2.033.439-.147.567l-2.158 1.542a13.047 13.047 0 0 0 6.844 6.844l1.54-2.154a.462.462 0 0 1 .573-.149 13.901 13.901 0 0 0 4 1.205c.139.02.322.042.55.064a.5.5 0 0 1 .449.498z"/>
+					</svg>
+
+					<div class="phone_info">
+						<h3>Téléphone</h3>
+						<p>0238240506</p>
+					</div>
+				</div>
+				<div class="email">
+					<svg xmlns="http://www.w3.org/2000/svg" class="st0" viewbox="0 0 24 24" width="42" height="42">
+						<path fill="none" d="M0 0h24v24H0z"/>
+						<path d="M2.243 6.854L11.49 1.31a1 1 0 0 1 1.029 0l9.238 5.545a.5.5 0 0 1 .243.429V20a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.283a.5.5 0 0 1 .243-.429zm16.103 1.39l-6.285 5.439-6.414-5.445-1.294 1.524 7.72 6.555 7.581-6.56-1.308-1.513z"/>
+					</svg>
+					<div class="email_info">
+						<h3>Adresse email</h3>
+						<p>quentin.duflos@sarpgn.fr</p>
+						<p>corentin.fremont@sarpgn.fr</p>
+					</div>
+				</div>
+			</div>
+			<div class="right">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2674.5054845976906!2d1.897375351519978!3d47.90725597910362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e4fb2aa1709a65%3A0xdadb9d1d1c7a3b9f!2sSARPGN!5e0!3m2!1sfr!2sfr!4v1676621950408!5m2!1sfr!2sfr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+		</div>
+	</div>
+</section>
+    {% block footer %}{% endblock %}
+
+{% endblock %}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>
+			{% block title %}Accueil
+			{% endblock %}
+			- Sarpgn
+		</title>
+		<!-- Feuilles de styles -->
+
+		{% block stylesheets %}{% endblock %}
+		<link rel="stylesheet" href="{{ asset('assets/css/styles.css') }}">
+		<link rel="stylesheet" href="{{ asset('assets/css/variables.css') }}">
+
+
+	</head>
+	<body>
+
+		{% include "_partials/_nav.html.twig" %}
+
+		{% block body %}{% endblock %}
+		{% block footer %}
+			{% include "_partials/_footer.html.twig"%}
+		{% endblock %}
+		{% block javascripts %}{% endblock %}
+
+		<!-- Fichiers JS -->
+
+		<script src="{{ asset('assets/js/script.js')}}">
+			defer</script>
+	</body>
+</html>
