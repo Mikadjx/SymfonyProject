@@ -12,19 +12,21 @@
     "glob-parent": "^5.1.2",
     "immutable": "^4.2.4",
     "is-binary-path": "^2.1.0",
-    "is-glob": "^4.0.3",
-    "normalize-path": "^3.0.0",
     "is-extglob": "^2.1.1",
-    "picomatch": "^2.3.1",
+    "is-glob": "^4.0.3",
     "is-number": "^7.0.0",
+    "normalize-path": "^3.0.0",
+    "picomatch": "^2.3.1",
     "readdirp": "^3.6.0",
     "sass": "^1.58.3",
     "source-map-js": "^1.0.2",
     "to-regex-range": "^5.0.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "file-loader": "^6.2.0"
+  },
   "scripts": {
-    "sass": "sass -w ./public/assets/scss:./public/assets/css"
+    "sass": "sass --watch ./public/assets/scss:./public/assets/css --style compressed"
   },
   "author": "",
   "license": "ISC"

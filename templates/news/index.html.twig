@@ -1,0 +1,52 @@
+{% extends 'blog.html.twig' %}
+
+{% block title %}Acceuil News
+{% endblock %}
+
+
+{% block body %}
+	{% block nav %}{% endblock %}
+
+<div class="card_blog">
+		<h1> News</h1>
+
+		<table class="table">
+			<thead>
+				<tr>
+					<th>Id</th>
+					<th>Titre</th>
+					<th>Description</th>
+					<th>Nom de l'image</th>
+					<th>Crée le</th>
+					<th>Mis à jour le</th>
+					<th>Actions</th>
+				</tr>
+			</thead>
+			<tbody>
+				{% for news in news %}
+					<tr>
+						<td>{{ news.id }}</td>
+						<td>{{ news.title }}</td>
+						<td>{{ news.description|slice(0,100) }}...</td>
+						<td>{{ news.imageName }}</td>
+						<td>{{ news.createdAt ? news.createdAt|date('Y-m-d H:i:s') : '' }}</td>
+						<td>{{ news.updatededAt ? news.updatededAt|date('Y-m-d H:i:s') : '' }}</td>
+						<td>
+							<a href="{{ path('app_news_show', {'id': news.id}) }}">Afficher</a>
+							<a href="{{ path('app_news_edit', {'id': news.id}) }}">Editer</a>
+						</td>
+					</tr>
+				{% else %}
+					<tr>
+						<td colspan="7">no records found</td>
+					</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+
+		<button class="btn"><a href="{{ path('app_news_new') }}">Créer un article </a><button>
+		</div
+
+	{% block footer %}{% endblock %}
+
+{% endblock %}

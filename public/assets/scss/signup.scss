@@ -8,12 +8,13 @@ body {
 }
 
 .main {
-    background: url(../images/banniere.png);
+    background: url(../images/maldives.jpg)  rgba(0, 0, 0, 0.619);
     background-size: cover;
     background-position: center;
     @include flex-jccenter-ai-center;
     padding-top: 15rem;
     height: 100%;
+
 }
 
 .container {

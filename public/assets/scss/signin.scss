@@ -8,16 +8,18 @@ body {
 }
 
 .main {
-  background: url(../images/banniere.png);
+  background: url(../images/maldives.jpg)  rgba(0, 0, 0, 0.619);
   background-size: cover;
+  background-blend-mode: darken;
   background-position: center;
   @include flex-jccenter-ai-center;
   padding-top: 15rem;
   height: 100%;
+
 }
 
 .container {
-  background-color: var(--color-forms);
+  background-color: rgba(212, 206, 204, 0.808);
   @include flex-ai-center;
   flex-direction: column;
   border-radius: var(--border-radius-input);

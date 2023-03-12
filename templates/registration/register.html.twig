@@ -2,7 +2,6 @@
 
 {% block title %}Register{% endblock %}
 
-
 {% block stylesheets %}
 	<link rel="stylesheet" href="{{ asset('assets/css/signup.css') }}">
 
@@ -15,9 +14,10 @@
 
     <section class="main">
 
-    <h1>Création de compte</h1>
 
     {{ form_start(registrationForm) }}
+
+
         {{ form_row(registrationForm.email) }}
         {{ form_row(registrationForm.plainPassword, {
             label: 'Password'
@@ -25,6 +25,8 @@
         {{ form_row(registrationForm.agreeTerms) }}
 
         <button type="submit" class="btn">Inscription</button>
+
+        
     {{ form_end(registrationForm) }}
 
     </section>

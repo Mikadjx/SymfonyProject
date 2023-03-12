@@ -1,5 +1,6 @@
 @import "mixins";
 
+
 * {
     margin: 0;
     padding: 0;
@@ -27,9 +28,6 @@ h2 {
     font-size: var(--small-size);
     margin-left: 3rem;
     text-align: start;
-    @include smartphone {
-        display: none;
-    }
 }
 
 h1 {

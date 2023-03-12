@@ -1,0 +1,10 @@
+
+
+{{ form_start(form) }}
+<label>Titre de la news</label>
+{{ form_widget(form.title,{'attr':{'class':'form-control'}}) }}<br>
+{{ form_row(form.description,{'attr':{'class':'form-control'}}) }}<br>
+{{ form_row(form.imageFile,{'attr':{'class':'form-control'}}) }}<br>
+<button class="btn">{{ button_label|default('Enregistrer') }}</button>
+{{ form_end(form) }}
+

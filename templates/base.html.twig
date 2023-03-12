@@ -4,22 +4,26 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
 		<title>
 			{% block title %}Accueil
-			{% endblock %}
-			- Sarpgn
+			{% endblock %}- Onygo
 		</title>
 		<!-- Feuilles de styles -->
 
 		{% block stylesheets %}{% endblock %}
-	
+
+
 		<link rel="stylesheet" href="{{ asset('assets/css/variables.css') }}">
-	
+
+
 	</head>
+
 	<body>
-
-		{% include "_partials/_nav.html.twig" %}
-
+		{% block nav %}
+			{% include "_partials/_nav.html.twig" %}
+		{% endblock %}
 		{% block body %}{% endblock %}
 		{% block footer %}
 			{% include "_partials/_footer.html.twig"%}
@@ -30,5 +34,6 @@
 
 		<script src="{{ asset('assets/js/script.js')}}">
 			defer</script>
+
 	</body>
 </html>

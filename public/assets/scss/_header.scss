@@ -1,10 +1,11 @@
 /* HEADER */
 .nav {
     position: fixed;
-    width: 100%;
+  width:100%;
     z-index: 1;
     header {
       background-color: var(--color-white);
+
       .bandeau {
         background: var(--color-blue);
         height: 3.5rem;
@@ -12,6 +13,7 @@
       .container_header {
         @include flex-jcbetween-ai-center;
         padding: 1rem;
+     
         .container_logo {
           @include flex-ai-center;
         }

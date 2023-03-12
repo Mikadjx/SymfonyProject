@@ -7,6 +7,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
     .container-about {
         text-align: center;
         max-width: 800px;
@@ -32,15 +33,15 @@
                 width: 100%;
                 height: 70%;
                 &.img-left {
-                    background-image: url(../images/policeman1.png);
+                    background-image: url();
                     background-size: cover;
                 }
                 &.img-mid {
-                    background-image: url(../images/img_card-mid.png);
+                    background-image: url();
                     background-size: cover;
                 }
                 &.img-right {
-                    background-image: url(../images/img_card_right.png);
+                    background-image: url();
                     background-size: cover;
                 }
             }

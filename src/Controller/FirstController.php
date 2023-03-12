@@ -11,12 +11,12 @@ use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
 
 class FirstController extends AbstractController
 {
-    #[Route('/', name: 'app_home_page')]
+    #[Route('/essai', name: 'app_home_page')]
     public function index(EntityManagerInterface $entityManager,UserPasswordHasherInterface $userPasswordHasher ): Response
     {
 
         
-        return $this->render('homepage/index.html.twig', [
+        return $this->render('index/index.html.twig', [
             
         ]);
     }
