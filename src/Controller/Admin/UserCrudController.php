@@ -2,7 +2,11 @@
 
 namespace App\Controller\Admin;
 
+
 use App\Entity\User;
+use EasyCorp\Bundle\EasyAdminBundle\Field\ArrayField;
+use EasyCorp\Bundle\EasyAdminBundle\Field\TextField;
+use EasyCorp\Bundle\EasyAdminBundle\Field\IdField;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Crud;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;
 
@@ -27,15 +31,19 @@ public function configureCrud(Crud $crud): Crud
    public function configureFields(string $pageName): iterable
     {
         return [
-            IdField::new('id'),
+            IdField::new('id')
+    
+            ->hideOnForm(),
 
             TextField::new('FirstName'),
 
-            TextField::new('LastName'),
+            TextField::new('lastName'),
 
-            TextField::new('email'),
+            TextField::new('email')
+            ->hideOnForm(),
 
-            ArrayField::new('roles'),
+            ArrayField::new('roles')
+            ->hideOnIndex(),
         ];
    } 
 
